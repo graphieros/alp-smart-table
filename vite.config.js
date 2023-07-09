@@ -5,9 +5,9 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 export default defineConfig({
   build: {
     lib: {
-      entry: ["src/lib/Counter.svelte"],
+      entry: ["src/lib/AlpSmartTable.svelte"],
       formats: ["es"]
     },
   },
-  plugins: [svelte({ compilerOptions: { customElement: process.env.NODE_ENV === 'production' } })],
+  plugins: [svelte({ compilerOptions: { customElement: true } })],
 })
